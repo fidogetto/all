@@ -1,0 +1,150 @@
+/* Importing Custom Font */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&display=swap');
+
+
+/* Global Styles */
+body {
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Gentium Book Basic', serif;
+    color: #5A5A5A;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensures the body doesn’t exceed viewport height */
+    width: 100vw; /* Ensures the width doesn’t exceed viewport width */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+}
+
+/* Centering container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensures it fills the screen */
+    padding: 5px;
+    
+    position: relative;
+}
+
+/* Elements Icons (Top Middle) */
+.elements-icons {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    margin-bottom: 1px;
+}
+
+/* Logo */
+.logo {
+    max-width: 900px;
+    margin-bottom: 40px;
+     
+}
+
+/* Tagline */
+.tagline {
+    font-size: clamp(18px, 2.5vw, 22px);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    color: #5A5A5A;
+}
+
+/* Email Form */
+.wishlist-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1200px; /* Prevents it from getting too wide */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact-us {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 16px;
+    color: #5A5A5A; /* Gray color */
+}
+
+.contact-us a {
+    color: #5A5A5A; /* Same gray color */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-us a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Cards Image (Footer Middle) */
+.footer-cards {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-cards img {
+    width: min(90%, 650px);
+}
+
+/* Social Media Icons (Bottom Right) */
+.social-icons {
+    display: flex;
+    position: absolute; /* Ensures it stays in place */
+    bottom: 30px; /* Adjust for spacing from the bottom */
+    right: 50px; /* Adjust for spacing from the right */
+    gap: 10px; /* Space between icons */
+}
+
+.social-icons img {
+    width: clamp(25px, 3vw, 35px);
+    height: clamp(25px, 3vw, 35px);
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .logo {
+        max-width: 300px;
+    }
+    .tagline {
+        font-size: 16px;
+    }
+    
+    .footer-cards img {
+        width: 300px;
+    }
+}
+
+html, body {
+    overflow-x: hidden;
+}
